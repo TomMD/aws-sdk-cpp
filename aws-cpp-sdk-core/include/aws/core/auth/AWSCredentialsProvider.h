@@ -35,7 +35,7 @@ namespace Aws
 
     namespace Auth
     {
-        static int REFRESH_THRESHOLD = 1000 * 60 * 15;
+        static int REFRESH_THRESHOLD = 1000 * 60 * 5;
         static int EXPIRATION_GRACE_PERIOD = 5 * 1000;
 
         /**
