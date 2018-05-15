@@ -241,10 +241,10 @@ long long StringUtils::ConvertToInt64(const char* source)
         return 0;
     }
 
-#ifdef __ANDROID__
+#if defined(__ANDROID__)
     return atoll(source);
 #else
-    return std::atoll(source);
+    return atoll(source);
 #endif // __ANDROID__
 }
 
